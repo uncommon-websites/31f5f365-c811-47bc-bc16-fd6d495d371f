@@ -18,240 +18,302 @@
   <Stats />
   <Steps />
   
-  <!-- Feature 1: Convert signups -->
+  <!-- Feature 1: Multilingual QR Menus -->
   <FeatureSection 
-    title="Convert signups to active users with sophisticated onboarding flows"
-    subtitle="OPTIMIZE EVERY STEP OF THE CUSTOMER JOURNEY"
-    linkText="Marketing platform"
+    title="Multilingual QR menus that speak your customers' language"
+    subtitle="REACH EVERY CUSTOMER"
+    linkText="Learn about menu features"
     bullets={[
-      "Account creation and KYC reminders",
-      "Push notifications/email reminders for account completion",
-      "Message templates for every channel",
-      "AI-optimized send times for higher activation rates"
+      "Support for Amharic, English, and multiple languages",
+      "Beautiful menu layouts with dish photos and descriptions",
+      "Instant updates across all QR codes when you change prices",
+      "Mobile-optimized for seamless browsing on any device"
     ]}
   >
     <div slot="description">
-      <p>Guide new customers from account creation to first transaction with multi-step onboarding flows.</p>
+      <p>Create professional digital menus that work for local and international guests—no printing costs, instant updates, and zero language barriers.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-      <!-- Mockup for onboarding flow -->
-      <div class="bg-white rounded-xl shadow-lg p-6 w-[80%] max-w-sm relative">
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">1</div>
-          <div class="text-sm font-semibold">Create account</div>
+      <!-- Mobile menu mockup -->
+      <div class="bg-white rounded-2xl shadow-2xl p-4 w-64 relative">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-gray-100">
+          <div class="text-xs font-semibold text-gray-900">Menu</div>
+          <div class="flex gap-2">
+            <span class="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded-full font-medium">አማርኛ</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">EN</span>
+          </div>
         </div>
         <div class="space-y-3">
-          <div class="h-2 bg-gray-100 rounded w-full"></div>
-          <div class="h-8 bg-blue-600 rounded w-full text-white flex items-center justify-center text-sm font-medium">Create account</div>
-          <div class="flex items-center gap-2 mt-4 p-3 bg-green-50 rounded-lg border border-green-100">
-             <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs">✓</div>
-             <div class="text-xs text-green-800">Your verification code is 123456 - do not share this code.</div>
+          <div class="flex gap-3 p-2 bg-gray-50 rounded-lg">
+            <div class="w-16 h-16 bg-primary-200 rounded-lg flex items-center justify-center text-2xl">🍲</div>
+            <div class="flex-1">
+              <div class="text-sm font-semibold text-gray-900">ዶሮ ወጥ</div>
+              <div class="text-xs text-gray-500">Doro Wat</div>
+              <div class="text-sm font-bold text-primary-600 mt-1">450 Birr</div>
+            </div>
+          </div>
+          <div class="flex gap-3 p-2 bg-gray-50 rounded-lg">
+            <div class="w-16 h-16 bg-primary-200 rounded-lg flex items-center justify-center text-2xl">🥘</div>
+            <div class="flex-1">
+              <div class="text-sm font-semibold text-gray-900">ክትፎ</div>
+              <div class="text-xs text-gray-500">Kitfo</div>
+              <div class="text-sm font-bold text-primary-600 mt-1">380 Birr</div>
+            </div>
           </div>
         </div>
         
-        <!-- Floating elements -->
-        <div class="absolute -right-12 top-10 bg-white p-3 rounded-lg shadow-md flex items-center gap-2">
-           <div class="w-6 h-6 bg-gray-900 rounded-full flex items-center justify-center text-white text-xs">$</div>
-           <div class="text-xs font-medium">One step left!</div>
+        <!-- QR Code indicator -->
+        <div class="absolute -right-16 top-8 bg-white p-3 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-gray-900 rounded grid grid-cols-3 gap-[2px] p-1">
+            {#each Array(9) as _}
+              <div class="bg-white rounded-sm"></div>
+            {/each}
+          </div>
+          <div class="text-[10px] text-gray-500 text-center mt-1">Scan me</div>
         </div>
       </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 2: Deliver authentication -->
+  <!-- Feature 2: Payment-first ordering -->
   <FeatureSection 
-    title="Deliver authentication instantly"
-    subtitle=""
-    linkText="Data platform"
+    title="Payment-first ordering eliminates unpaid orders"
+    subtitle="POWERED BY TELEBIRR"
+    linkText="See payment integration"
     reversed={true}
     bullets={[
-      "Real-time OTP codes via SMS, WhatsApp, and push",
-      "Authentication Journeys with automated fallbacks",
-      "End-to-end encryption",
-      "Compliance-ready verification templates"
+      "Customers pay via Telebirr before orders reach kitchen",
+      "100% payment completion rate—no more unpaid bills",
+      "Instant payment confirmation and order routing",
+      "Secure transactions with Ethiopia's trusted payment platform"
     ]}
   >
     <div slot="description">
-      <p>Ensure secure logins and transactions with global OTP delivery, fallback options, and end-to-end encryption.</p>
+      <p>Transform payment uncertainty into guaranteed revenue. Every order is prepaid through Telebirr integration, giving you peace of mind and improving cash flow.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Diagram -->
+       <!-- Payment flow diagram -->
        <div class="flex flex-col items-center gap-4">
          <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 w-64 flex items-center gap-3">
-            <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center text-purple-600">⚡</div>
+            <div class="w-8 h-8 bg-primary-100 rounded flex items-center justify-center text-primary-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h.01M7 12h.01M7 17h.01M12 7h.01M12 12h.01M12 17h.01M17 7h.01M17 12h.01M17 17h.01"/></svg>
+            </div>
             <div class="text-sm">
-               <div class="font-semibold">Trigger</div>
-               <div class="text-xs text-gray-500">Customer makes a purchase</div>
+               <div class="font-semibold">Customer scans QR</div>
+               <div class="text-xs text-gray-500">Views menu & selects items</div>
             </div>
          </div>
          <div class="h-8 w-px bg-gray-300"></div>
-         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 w-64 flex items-center gap-3">
-            <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center text-green-600">💬</div>
+         <div class="bg-white p-4 rounded-lg shadow-sm border border-primary-100 w-64 flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary-600 rounded flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
             <div class="text-sm">
-               <div class="font-semibold">Send SMS</div>
-               <div class="text-xs text-gray-500">Send verification code to...</div>
+               <div class="font-semibold">Pay via Telebirr</div>
+               <div class="text-xs text-gray-500">Secure prepayment required</div>
             </div>
          </div>
          <div class="h-8 w-px bg-gray-300"></div>
-         <div class="bg-orange-50 p-2 rounded-full text-xs text-orange-600 font-medium px-4 border border-orange-100">
-            Conditioner
+         <div class="bg-green-50 p-2 rounded-full text-xs text-green-700 font-medium px-4 border border-green-200 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Order confirmed
          </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 3: Send transaction updates -->
+  <!-- Feature 3: Real-time order management -->
   <FeatureSection 
-    title="Send transaction and account updates automatically"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Real-time order management from table to kitchen"
+    subtitle="STREAMLINE OPERATIONS"
+    linkText="View order dashboard"
     bullets={[
-      "Real-time transaction confirmations via Push",
-      "Low balance and overdraft alerts",
-      "Multi-language and currency localization support",
-      "Spending summaries and insights"
+      "Instant order notifications to kitchen staff",
+      "Track order status from placement to completion",
+      "Table management and order history",
+      "Print or display orders on kitchen screens"
     ]}
   >
     <div slot="description">
-      <p>Keep customers informed with instant, trusted notifications for every financial event.</p>
+      <p>Keep your kitchen running smoothly with instant order routing, status tracking, and seamless coordination between front and back of house.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Mobile list UI -->
-       <div class="bg-white rounded-2xl shadow-lg p-4 w-64 space-y-4">
-          <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
-             <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center text-white">$</div>
-             <div>
-                <div class="text-xs font-bold">Transaction received</div>
-                <div class="text-[10px] text-gray-500">You received $45.00 from Paul</div>
-             </div>
+       <!-- Order dashboard mockup -->
+       <div class="bg-white rounded-2xl shadow-lg p-4 w-72 space-y-3">
+          <div class="flex items-center justify-between mb-2">
+            <div class="text-sm font-bold text-gray-900">Active Orders</div>
+            <div class="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded-full font-medium">3 pending</div>
           </div>
-          <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
-             <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">atm</div>
-             <div>
-                <div class="text-xs font-bold">ATM withdrawal</div>
-                <div class="text-[10px] text-gray-500">$100 from Main Street ATM</div>
+          <div class="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
+             <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">12</div>
+             <div class="flex-1">
+                <div class="text-xs font-bold text-gray-900">Doro Wat × 2</div>
+                <div class="text-[10px] text-gray-500">Paid: 900 Birr • 2 min ago</div>
              </div>
+             <div class="text-xs text-green-700 font-medium">New</div>
           </div>
-          <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
-             <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white">☕</div>
-             <div>
-                <div class="text-xs font-bold">Starbucks Coffee</div>
-                <div class="text-[10px] text-gray-500">You spent $4.95</div>
+          <div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
+             <div class="w-10 h-10 bg-yellow-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">8</div>
+             <div class="flex-1">
+                <div class="text-xs font-bold text-gray-900">Kitfo, Tibs</div>
+                <div class="text-[10px] text-gray-500">Paid: 650 Birr • 8 min ago</div>
              </div>
+             <div class="text-xs text-yellow-700 font-medium">Cooking</div>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+             <div class="w-10 h-10 bg-gray-400 rounded-lg flex items-center justify-center text-white font-bold text-sm">5</div>
+             <div class="flex-1">
+                <div class="text-xs font-bold text-gray-900">Shiro, Injera</div>
+                <div class="text-[10px] text-gray-500">Paid: 320 Birr • 15 min ago</div>
+             </div>
+             <div class="text-xs text-gray-700 font-medium">Ready</div>
           </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 4: Keep customers active -->
+  <!-- Feature 4: Easy menu management -->
   <FeatureSection 
-    title="Keep customers active and loyal"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Update your menu instantly across all tables"
+    subtitle="SIMPLE MENU MANAGEMENT"
+    linkText="Explore menu tools"
     reversed={true}
     bullets={[
-      "Product upgrade and feature adoption nudges",
-      "Automated Journeys by event",
-      "Segmentation by customer value",
-      "Built-in A/B testing"
+      "Change prices, add dishes, or update descriptions in seconds",
+      "Upload dish photos to make menus more appealing",
+      "Mark items as sold out or unavailable in real-time",
+      "Seasonal menus and special promotions made easy"
     ]}
   >
     <div slot="description">
-      <p>Re-engage inactive users and reward loyal ones with personalized campaigns.</p>
+      <p>No more reprinting menus or crossing out prices. Update your digital menu once and all QR codes reflect changes instantly.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Email Mockup -->
-       <div class="bg-white rounded-xl shadow-lg w-[80%] overflow-hidden border border-gray-100">
-          <div class="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-             <div class="w-3 h-3 rounded-full bg-red-400"></div>
-             <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-             <div class="w-3 h-3 rounded-full bg-green-400"></div>
-          </div>
-          <div class="p-6">
-             <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-8 bg-black rounded-full"></div>
-                <div class="text-xs font-semibold">LumePay • info@lumepay.com</div>
+       <!-- Menu editor mockup -->
+       <div class="bg-white rounded-xl shadow-lg w-[85%] overflow-hidden border border-gray-100">
+          <div class="bg-gray-50 p-3 border-b border-gray-100 flex items-center justify-between">
+             <div class="text-xs font-semibold text-gray-900">Menu Editor</div>
+             <div class="flex gap-2">
+               <div class="text-xs bg-primary-600 text-white px-3 py-1 rounded-md font-medium">Save changes</div>
              </div>
-             <div class="text-sm font-bold mb-2">Hi <span class="bg-yellow-100 px-1 rounded text-yellow-800">{`{{FirstName}}`}</span></div>
-             <p class="text-xs text-gray-500 mb-4">
-                We saw you just made your first transfer abroad — welcome to the global stage!
-             </p>
-             <p class="text-xs text-gray-500">
-                Did you know Gold members save up to 1.5% on every currency conversion?
-             </p>
+          </div>
+          <div class="p-6 space-y-3">
+             <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                <div class="w-12 h-12 bg-primary-200 rounded flex items-center justify-center text-lg">🍲</div>
+                <div class="flex-1">
+                   <div class="text-sm font-semibold text-gray-900">Doro Wat</div>
+                   <div class="flex items-center gap-2 mt-1">
+                     <input type="text" value="450" class="w-16 text-xs border border-gray-300 rounded px-2 py-1" />
+                     <span class="text-xs text-gray-500">Birr</span>
+                   </div>
+                </div>
+                <div class="flex gap-1">
+                  <button class="w-6 h-6 bg-gray-200 rounded flex items-center justify-center text-gray-600 text-xs">✎</button>
+                  <button class="w-6 h-6 bg-red-100 rounded flex items-center justify-center text-red-600 text-xs">×</button>
+                </div>
+             </div>
+             <div class="flex items-center gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
+                <div class="w-12 h-12 bg-yellow-200 rounded flex items-center justify-center text-lg">🥘</div>
+                <div class="flex-1">
+                   <div class="text-sm font-semibold text-gray-900">Kitfo</div>
+                   <div class="text-xs text-yellow-700 font-medium">Sold out today</div>
+                </div>
+                <div class="text-xs bg-yellow-600 text-white px-2 py-1 rounded">Unavailable</div>
+             </div>
           </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 5: Understand what drives -->
+  <!-- Feature 5: Analytics and insights -->
   <FeatureSection 
-    title="Understand what drives transactions and engagement"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Understand what drives sales and optimize your menu"
+    subtitle="DATA-DRIVEN DECISIONS"
+    linkText="View analytics dashboard"
     bullets={[
-      "Attribution dashboards",
-      "SLA reporting",
-      "Content performance reporting",
-      "Optimal send-time analysis"
+      "Track best-selling dishes and peak ordering times",
+      "Revenue analytics by day, week, and month",
+      "Customer preferences and ordering patterns",
+      "Identify underperforming menu items"
     ]}
   >
     <div slot="description">
-      <p>Identify your highest-impact campaigns so you can invest more in what works and cut what doesn't.</p>
+      <p>Make smarter business decisions with real-time insights into what your customers love, when they order, and how to maximize revenue.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center px-8">
        <!-- Chart -->
        <div class="w-full h-64 flex items-end justify-between gap-2">
-          {#each [40, 60, 30, 80, 50, 70, 45, 65, 35, 55, 75, 45] as height}
-             <div class="w-full bg-indigo-100 rounded-t-sm relative group">
-                <div style="height: {height}%" class="absolute bottom-0 w-full bg-indigo-500 rounded-t-sm transition-all duration-500 group-hover:bg-indigo-600"></div>
-                <div style="height: {height * 0.4}%" class="absolute bottom-0 w-full bg-teal-400 rounded-t-sm opacity-80"></div>
+          {#each [65, 45, 70, 55, 80, 60, 75, 50, 85, 65, 70, 60] as height}
+             <div class="w-full bg-primary-100 rounded-t-sm relative group">
+                <div style="height: {height}%" class="absolute bottom-0 w-full bg-primary-500 rounded-t-sm transition-all duration-500 group-hover:bg-primary-600"></div>
              </div>
           {/each}
        </div>
        <!-- Legend overlay -->
        <div class="absolute top-12 right-12 bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-xs">
-          <div class="flex justify-between gap-8 mb-1">
-             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-teal-400"></span> Renewed customers</span>
-             <span class="font-semibold">231</span>
+          <div class="flex justify-between gap-8 mb-2">
+             <span class="text-gray-500">Total Revenue</span>
+             <span class="font-bold text-gray-900">245,000 Birr</span>
           </div>
-          <div class="flex justify-between gap-8 mb-1">
-             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Won customers</span>
-             <span class="font-semibold">431</span>
+          <div class="flex justify-between gap-8 mb-2">
+             <span class="text-gray-500">Total Orders</span>
+             <span class="font-bold text-gray-900">1,247</span>
           </div>
           <div class="flex justify-between gap-8">
-             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-300"></span> Churned customers</span>
-             <span class="font-semibold">41</span>
+             <span class="text-gray-500">Avg Order Value</span>
+             <span class="font-bold text-gray-900">196 Birr</span>
+          </div>
+          <div class="mt-3 pt-3 border-t border-gray-100">
+            <div class="text-xs font-semibold text-gray-900 mb-1">Top Dish</div>
+            <div class="text-xs text-primary-600">Doro Wat (342 orders)</div>
           </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 6: Security -->
+  <!-- Feature 6: Security and reliability -->
   <FeatureSection 
-    title="Built for security, compliance, and trust"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Built for reliability and secure payments"
+    subtitle="TRUSTED PLATFORM"
+    linkText="Learn about security"
     reversed={true}
     bullets={[
-      "ISO 27001 and SOC 2 Type II certified",
-      "End-to-end encryption for all messages",
-      "SLA-backed uptime and instant scaling for high-volume sends",
-      "Compliance with GDPR, CCPA, LGPD, POPI, and UK Data Protection Act"
+      "Secure payment processing through Telebirr integration",
+      "99.9% uptime for uninterrupted service",
+      "Data protection and customer privacy built-in",
+      "Regular backups and disaster recovery"
     ]}
   >
     <div slot="description">
-      <p>Safeguard sensitive financial data and meet global regulatory requirements while strengthening customer confidence in your brand.</p>
+      <p>Trust QR Anbessa to keep your restaurant running smoothly with secure payments, reliable infrastructure, and data protection you can count on.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Compliance Logos Grid -->
-       <div class="grid grid-cols-2 gap-8 opacity-60 grayscale">
-          <div class="flex items-center gap-2 font-bold text-lg"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/></svg> GDPR</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🔒 SOC II</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🏥 HIPAA</div>
-          <div class="flex items-center gap-2 font-bold text-lg">⭕ OAuth</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🌐 ISO/IEC 27001</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🔑 OKTA</div>
+       <!-- Security features grid -->
+       <div class="grid grid-cols-2 gap-6">
+          <div class="flex flex-col items-center gap-3 p-4 bg-white rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <div class="text-sm font-bold text-gray-900 text-center">Secure Payments</div>
+          </div>
+          <div class="flex flex-col items-center gap-3 p-4 bg-white rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="text-sm font-bold text-gray-900 text-center">Data Protection</div>
+          </div>
+          <div class="flex flex-col items-center gap-3 p-4 bg-white rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <div class="text-sm font-bold text-gray-900 text-center">99.9% Uptime</div>
+          </div>
+          <div class="flex flex-col items-center gap-3 p-4 bg-white rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <div class="text-sm font-bold text-gray-900 text-center">Daily Backups</div>
+          </div>
        </div>
     </div>
   </FeatureSection>

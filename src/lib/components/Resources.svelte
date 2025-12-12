@@ -4,10 +4,10 @@
       <div>
         <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Find out more</div>
         <h2 class="text-3xl font-semibold text-gray-900 mb-4">
-          Explore new ways to grow<br>and support your business.
+          Explore new ways to grow<br>your restaurant business.
         </h2>
         <a href="#" class="text-sm font-medium text-primary-600 hover:text-primary-700 flex items-center gap-1 mt-4">
-          View all customer stories 
+          View all resources 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
         </a>
       </div>
@@ -24,10 +24,10 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Blog Card 1 -->
       <div class="group relative h-[300px] rounded-2xl overflow-hidden cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog post" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        <img src="/generated/image-ethiopian-restaurant-owner-or-manager-lo-1765563387997-4.webp" alt="Blog post" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
         <div class="absolute bottom-0 left-0 p-8 w-full">
-           <h3 class="text-xl font-semibold text-white mb-2">Turn marketplace searches into bookings with smarter marketing</h3>
+           <h3 class="text-xl font-semibold text-white mb-2">How QR menus are transforming Ethiopian hospitality</h3>
            <div class="flex justify-end">
              <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -38,10 +38,10 @@
 
       <!-- Blog Card 2 -->
       <div class="group relative h-[300px] rounded-2xl overflow-hidden cursor-pointer">
-        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog post" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        <img src="/generated/image-close-up-of-smartphone-displaying-paymen-1765563390711-5.webp" alt="Blog post" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
         <div class="absolute bottom-0 left-0 p-8 w-full">
-           <h3 class="text-xl font-semibold text-white mb-2">Grow your ecommerce business on autopilot with smart sequences.</h3>
+           <h3 class="text-xl font-semibold text-white mb-2">5 ways to eliminate unpaid orders with payment-first systems</h3>
            <div class="flex justify-end">
              <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
